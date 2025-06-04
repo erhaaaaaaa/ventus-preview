@@ -1,20 +1,112 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ventus Fragrance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ventus - A Note of Gratitude</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  <!-- Open Graph Metadata -->
-  <meta property="og:title" content="Ventus Fragrance - Parfum Mewah" />
-  <meta property="og:description" content="Temukan aroma eksklusif dari Ventus Fragrance yang memikat." />
-  <meta property="og:image" content="https://i.imgur.com/iex9U7U.jpeg" />
-  <meta property="og:url" content="https://erhaaaaaaa.github.io/ventus-preview/" />
-  <meta property="og:type" content="website" />
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1.6s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 40px 20px;
+      text-align: left;
+      animation: contentFade 1.4s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes contentFade {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.4em;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .signature {
+      margin-top: 40px;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Ventus Fragrance</h1>
-  <p>Temukan aroma eksklusif dari Ventus Fragrance yang memikat.</p>
-  <img src="https://i.imgur.com/iex9U7U.jpeg" alt="Ventus Fragrance" style="max-width: 100%; height: auto;" />
+  <div class="container">
+    <img src="https://i.imgur.com/iex9U7U.jpg" alt="Ventus Thank You Card">
+    <h1>Ventus</h1>
+    <h2>A Note of Gratitude from Ventus</h2>
+    <p>Dear Esteemed Customer,</p>
+    <p>Thank you for choosing Ventus—a fragrance born not just from rare ingredients, but from a deep desire to capture the soul of the wind.</p>
+    <p>Your decision to bring Ventus into your life means more to us than just a purchase. It reflects a shared belief in elegance, individuality, and the art of living with intention.</p>
+    <p>Every drop of Ventus is carefully blended to speak to your character—graceful, bold, and timeless.</p>
+    <p>We believe that a fragrance is not simply worn, but lived. It lingers in moments, memories, and movements.</p>
+    <p>With Ventus, we invite you to carry a scent that elevates your presence and leaves an impression long after you've left the room.</p>
+    <p>Welcome to the Ventus experience—crafted with passion, bottled with purpose, and delivered with admiration.</p>
+    <p>May this fragrance accompany your most meaningful moments.</p>
+    <p class="signature">Warmest regards,<br>The Ventus Team</p>
+  </div>
 </body>
 </html>
